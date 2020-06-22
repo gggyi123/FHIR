@@ -106,7 +106,7 @@ jobs:
             git add .
             git commit -m "Automated gh-pages deployment: $(date -u)"
     - name: Push changes to GH Pages
-      env:
+      env: 
             GITHUB_TOKEN: ${{ secrets.DOCS_SITE_TOKEN }}
             GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
             GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
